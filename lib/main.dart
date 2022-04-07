@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
         ),
         home: Scaffold(
           appBar: AppBar(
-            title: const Text("Aplikasi Pertama Saya"),
+            title: const Text("Test 1 - C14190024"),
           ),
           body: SingleChildScrollView(
               child: Column(
@@ -26,12 +26,12 @@ class MyApp extends StatelessWidget {
                 //ROW 1
                 children: [
                   Container(
-                    margin: const EdgeInsets.all(25.0),
+                    margin: const EdgeInsets.all(25),
                     child: const Text(
                       "Popular Courses: ",
                       style: TextStyle(
                           color: Colors.black,
-                          fontSize: 22.0,
+                          fontSize: 22,
                           fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -42,46 +42,46 @@ class MyApp extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                      margin: const EdgeInsets.fromLTRB(25.0, 0.0, 15.0, 0.0),
+                      margin: const EdgeInsets.fromLTRB(25, 0.0, 15, 0.0),
                       child: Column(
                         children: const [
-                          Icon(Icons.calendar_today, size: 35.0),
+                          Icon(Icons.calendar_today, size: 35),
                           SizedBox(height: 10),
                           Text("Science"),
                         ],
                       )),
                   Container(
-                      margin: const EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
+                      margin: const EdgeInsets.fromLTRB(15, 0.0, 15, 0.0),
                       child: Column(
                         children: const [
-                          Icon(Icons.coffee, size: 40.0),
+                          Icon(Icons.coffee, size: 40),
                           SizedBox(height: 10),
                           Text("Cooking"),
                         ],
                       )),
                   Container(
-                      margin: const EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
+                      margin: const EdgeInsets.fromLTRB(15, 0.0, 15, 0.0),
                       child: Column(
                         children: const [
-                          Icon(Icons.architecture, size: 40.0),
+                          Icon(Icons.architecture, size: 40),
                           SizedBox(height: 10),
                           Text("Math"),
                         ],
                       )),
                   Container(
-                      margin: const EdgeInsets.fromLTRB(15.0, 0.0, 15.0, 0.0),
+                      margin: const EdgeInsets.fromLTRB(15, 0.0, 15, 0.0),
                       child: Column(
                         children: const [
-                          Icon(Icons.agriculture_rounded, size: 40.0),
+                          Icon(Icons.agriculture_rounded, size: 40),
                           SizedBox(height: 10),
                           Text("Biology"),
                         ],
                       )),
                   Container(
-                      margin: const EdgeInsets.fromLTRB(15.0, 0.0, 25.0, 0.0),
+                      margin: const EdgeInsets.fromLTRB(15, 0.0, 25, 0.0),
                       child: Column(
                         children: const [
-                          Icon(Icons.auto_awesome, size: 40.0),
+                          Icon(Icons.auto_awesome, size: 40),
                           SizedBox(height: 10),
                           Text("Design")
                         ],
@@ -92,7 +92,7 @@ class MyApp extends StatelessWidget {
                 //ROW 3
                 children: [
                   Container(
-                    margin: const EdgeInsets.all(25.0),
+                    margin: const EdgeInsets.all(25),
                     child: const Text(
                       "Continue Learning: ",
                       style: TextStyle(
@@ -298,7 +298,6 @@ class MyApp extends StatelessWidget {
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(50.0),
-                
                 child: Container(
                   color: const Color.fromRGBO(225, 190, 230, 1),
                   margin: const EdgeInsets.all(5),
@@ -343,7 +342,6 @@ class MyApp extends StatelessWidget {
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(50.0),
-                
                 child: Container(
                   color: const Color.fromRGBO(225, 190, 230, 1),
                   margin: const EdgeInsets.all(5),
@@ -388,7 +386,6 @@ class MyApp extends StatelessWidget {
               ),
               ClipRRect(
                 borderRadius: BorderRadius.circular(50.0),
-                
                 child: Container(
                   color: const Color.fromRGBO(225, 190, 230, 1),
                   margin: const EdgeInsets.all(5),
@@ -430,7 +427,23 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
-              )
+              ),
+              BottomNavigationBar(
+                items: const <BottomNavigationBarItem>[
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.home, color: Colors.blue),
+                    label: 'Home',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.book),
+                    label: 'Explore',
+                  ),
+                  BottomNavigationBarItem(
+                    icon: Icon(Icons.chat),
+                    label: 'Chats',
+                  ),
+                ],
+              ),
             ],
           )),
         ));
